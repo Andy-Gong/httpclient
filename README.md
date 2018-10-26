@@ -15,11 +15,13 @@ Protocol exceptions generally indicate errors caused by a mismatch between the c
 Usually protocol exceptions cannot be recovered from without making adjustments. 
 Detail see here: http://hc.apache.org/httpclient-3.x/exception-handling.html
 
-## HttpStatusCode
-Here defines all HTTP status code, https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html. After anyalied the meaning of the codes, I think below codes can be recovered by retrying.
+## Http Status Code
+Here defines all HTTP status code, https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html. After anyalied,we think only below http status codes can be recovered by retrying.
 1. 408 Request Timeout
 2. 409 Conflict
 3. 500 Internal Server Error
 4. 504 Gateway Timeout
 5. 503 Service Unavailable
 
+# Summary
+In this project, we will retry in above transport exceptions and http status codes.
