@@ -14,3 +14,6 @@ Gnerally transport exceptions are non-fatal and maybe recovered from by retrying
 Protocol exceptions generally indicate errors caused by a mismatch between the client and the server in their interpretation of the HTTP specification. 
 Usually protocol exceptions cannot be recovered from without making adjustments. 
 Detail see here: http://hc.apache.org/httpclient-3.x/exception-handling.html
+
+## HttpStatusCode
+Here defines all HTTP status code, https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html, 
